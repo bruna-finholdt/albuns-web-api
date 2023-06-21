@@ -32,7 +32,7 @@ namespace PrimeiraWebAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Album>? Get() //? colocado
+        public IEnumerable<AlbumResponse>? Get() //? colocado
         {
             //List<string> listaDeDiscos = new List<string>();
             //listaDeDiscos.Add("Album 1");
@@ -54,7 +54,7 @@ namespace PrimeiraWebAPI.Controllers
             }
             else
             {
-                return NotFound(retorno.Mensagem);
+                return NotFound(retorno);
             }
         }
 
@@ -68,7 +68,7 @@ namespace PrimeiraWebAPI.Controllers
             }
             else
             {
-                return NotFound(retorno.Mensagem);
+                return NotFound(retorno);
             }
         }
 

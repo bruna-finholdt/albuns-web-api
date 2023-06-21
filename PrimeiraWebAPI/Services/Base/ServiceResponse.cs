@@ -25,7 +25,7 @@ namespace PrimeiraWebAPI.Services.Base
         //atributos da classe ServiceResponse
         public bool Sucesso { get; set; }
         public string Mensagem { get; set; }
-        public T ObjetoRetorno { get; set; } //irá assumir o tipo indicado por T.
+        public T? ObjetoRetorno { get; set; } //irá assumir o tipo indicado por T.
 
 
     }

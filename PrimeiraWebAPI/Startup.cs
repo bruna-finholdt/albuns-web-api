@@ -2,16 +2,14 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using PrimeiraWebAPI.DAL;
 using Microsoft.OpenApi.Models;
 using PrimeiraWebAPI.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace PrimeiraWebAPI
 {
@@ -29,12 +27,19 @@ namespace PrimeiraWebAPI
         {
 
             services.AddControllers();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PrimeiraWebAPI", Version = "v1" });
             });
-            //Indicar que AlbunsServices será usado com injeção de dependência
+            //Indicar que AlbunsServices e AvaliacoesService serão usados com injeção de dependência
             services.AddTransient<AlbunsService>();
+            services.AddTransient<AvaliacoesService>();
+
+            string connectionString = "Server=.\\SQLExpress;Database=PrimeiraAPI2023;Trusted_Connection=True;TrustServerCertificate=True;";
+            // se não estiver usando o SQLExpress tente
+            //Server=localhost;Database=PrimeiraAPI;Trusted_Connection=True;
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
