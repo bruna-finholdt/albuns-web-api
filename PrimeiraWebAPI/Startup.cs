@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using PrimeiraWebAPI.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,8 @@ namespace PrimeiraWebAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PrimeiraWebAPI", Version = "v1" });
             });
+            //Indicar que AlbunsServices será usado com injeção de dependência
+            services.AddTransient<AlbunsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
