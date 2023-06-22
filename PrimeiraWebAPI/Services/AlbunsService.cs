@@ -89,7 +89,9 @@ namespace PrimeiraWebAPI.Services
         {
             //return listaDeAlbuns;
             // select  * from albuns
+
             //return _dbContext?.Albuns?.ToList();
+
             // left join avaliacoes a on a.idAlbum = x.idAlbum
 
             var retornoDoBanco = _dbContext.Albuns.Include(x => x.Avaliacoes).ToList();
@@ -104,6 +106,7 @@ namespace PrimeiraWebAPI.Services
         public ServiceResponse<AlbumResponse> PesquisarPorId(int id)
         {
             //var resultado = listaDeAlbuns?.Where(x => x.IdAlbum == id).FirstOrDefault(); 
+
             //var resultado = _dbContext?.Albuns?.FirstOrDefault(x => x.IdAlbum == id);
 
             // left join avaliacoes a on a.idAlbum = x.idAlbum
