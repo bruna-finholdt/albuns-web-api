@@ -11,7 +11,8 @@ using System.Reflection;
 
 namespace PrimeiraWebAPI.Services
 {
-    public class AlbunsService //é a classe responsável por realizar as regras de negócio relacionadas à entidade Album
+    public class AlbunsService //é a classe responsável por realizar as regras de negócio relacionadas à
+                               //entidade Album
     {
         //private static List<Album>? listaDeAlbuns;  
         //private static int proximoId = 1;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\My Projects\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj": {}
+    "C:\\My Projects\\ITC Treinamento 2023\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\My Projects\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj": {
+    "C:\\My Projects\\ITC Treinamento 2023\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My Projects\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj",
+        "projectUniqueName": "C:\\My Projects\\ITC Treinamento 2023\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj",
         "projectName": "PrimeiraWebAPI",
-        "projectPath": "C:\\My Projects\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj",
+        "projectPath": "C:\\My Projects\\ITC Treinamento 2023\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj",
         "packagesPath": "C:\\Users\\bruna.finholdt\\.nuget\\packages\\",
-        "outputPath": "C:\\My Projects\\PrimeiraWebAPI\\PrimeiraWebAPI\\obj\\",
+        "outputPath": "C:\\My Projects\\ITC Treinamento 2023\\PrimeiraWebAPI\\PrimeiraWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bruna.finholdt\\AppData\\Roaming\\NuGet\\NuGet.Config",

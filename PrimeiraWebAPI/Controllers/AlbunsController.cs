@@ -81,8 +81,8 @@ namespace PrimeiraWebAPI.Controllers
         //return especificos
         {
             //validação modelo de entrada
-            if (ModelState.IsValid)//modelState é o objeto que guarda o estado de validação do modelo de entrada, ou seja
-                                   //a validação dos parametros do metodo
+            if (ModelState.IsValid)//modelState é o objeto que guarda o estado de validação do modelo de
+                                   //entrada, ou seja a validação dos parametros do metodo
             {
                 var retorno = albumService.CadastrarNovo(postModel);
                 if (!retorno.Sucesso)

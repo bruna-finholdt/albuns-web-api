@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QADJqyyKkijB6l3ncTd6nsCYmJ6ulu3SVd87utMSn50QE1vXKUGSqZluwl+690utsKHyB1XsySgAZgHmnVCxwg==",
+  "dgSpecHash": "g35ayaQCE5hi1FW38t8FW6XLe3eYP9812U8s1TYybi08dyoT+/lctIM0oA6bkkUB1tAmjSH/Ax7kMGW9jJr9Bg==",
   "success": true,
-  "projectFilePath": "C:\\My Projects\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj",
+  "projectFilePath": "C:\\My Projects\\ITC Treinamento 2023\\PrimeiraWebAPI\\PrimeiraWebAPI\\PrimeiraWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bruna.finholdt\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\bruna.finholdt\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

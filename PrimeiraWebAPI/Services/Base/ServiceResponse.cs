@@ -18,7 +18,7 @@ namespace PrimeiraWebAPI.Services.Base
         public ServiceResponse(string mensagemDeErro)
         {
             Sucesso = false;
-            mensagemDeErro = mensagemDeErro;
+            Mensagem = mensagemDeErro;
             ObjetoRetorno = default;
         }
 
