@@ -19,7 +19,13 @@ namespace PrimeiraWebAPI.Domain.DTO
             if (album.Avaliacoes != null && album.Avaliacoes.Any())
             {
                 Avaliacoes = new List<AvaliacaoResponse>();
-                Avaliacoes.AddRange(album.Avaliacoes.Select(x => new AvaliacaoResponse(x)));
+                Avaliacoes.AddRange(album.Avaliacoes.Select(x => new AvaliacaoResponse(x))); //Nessa linha, pega-se cada
+
+                //elemento na coleção album.Avaliacoes, transforma-o em um objeto AvaliacaoResponse usando o método Select(),
+                //e adiciona todos os objetos transformados à coleção Avaliacoes usando o método AddRange(). Esse código é útil
+                //para preencher ou atualizar uma coleção de objetos AvaliacaoResponse com base no conteúdo da coleção
+                //album.Avaliacoes.
+
             }
         }
 
