@@ -18,7 +18,6 @@ namespace PrimeiraWebAPI.Domain.DTO
 
             if (album.Avaliacoes != null && album.Avaliacoes.Any())
             {
-
                 Avaliacoes = new List<AvaliacaoResponse>();
                 Avaliacoes.AddRange(album.Avaliacoes.Select(x => new AvaliacaoResponse(x)));
             }
